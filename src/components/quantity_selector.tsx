@@ -1,18 +1,12 @@
-import { Button } from "@/components/ui/button"
+
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-  } from "@/components/ui/card"
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-} from "@/components/ui/accordion"
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger,
+  } from "@/components/ui/dropdown-menu"
   
 import { Checkbox } from "@/components/ui/checkbox"
 import { CheckboxWithText } from "./checkbox"
@@ -38,11 +32,21 @@ const QuantitySelector=()=>{
     <CheckboxWithText title="Subscribe & Save" price="$185.07" ></CheckboxWithText>
     </div>
   </div>
+  <div className="p-3 bg-orange-100 rounded-xl mb-2">
+  <DropdownMenu>
+  <DropdownMenuTrigger>Frequency- Every 1 month</DropdownMenuTrigger>
+  <DropdownMenuContent>
+    <DropdownMenuItem>Every 2 month</DropdownMenuItem>
+    <DropdownMenuItem>Every 3 month</DropdownMenuItem>
+  </DropdownMenuContent>
+</DropdownMenu>
+
+  </div>
   <div className="p-6 pt-0">
     <button
       className="align-middle w-full select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
       type="button">
-      Read More
+      Subscribe - $185.07
     </button>
 
   </div>

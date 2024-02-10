@@ -7,6 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import Accordionsection from "@/components/accordion";
+import { ModeToggle } from "@/components/modeToggle";
 export default function Home() {
   return (
     <div>
@@ -15,7 +16,7 @@ export default function Home() {
         <img src="left_carousal.webp" alt="" className="w-full h-auto" />
         </div>
         <div className="md:w-1/2 flex flex-col justify-center items-center bg-orange-100">
-          
+            <ModeToggle></ModeToggle>
             <h1 className="text-2xl mb-4 pt-10">“Drizzle” & “Sizzle”</h1>
             <h1 className="text-3xl mb-4">Extra Virgin Olive Oil</h1>
             <div></div>
